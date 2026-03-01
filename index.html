@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio website for [Your Name]">
-    <title>Portfolio - [Your Name]</title>
+    <meta name="description" content="Professional portfolio website for MWANGILWA CHISHIBA">
+    <title>Portfolio - MWANGILWA CHISHIBA</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -25,15 +25,17 @@
     <!-- Navigation -->
     <header class="header">
         <nav class="nav">
-            <!-- TODO: Create navigation with links to each section
-                 Requirements:
-                 - Logo/site title
-                 - Navigation links (Home, About, Projects, Contact)
-                 - Mobile-friendly (hamburger menu optional)
-                 - Active state indication
+            
+                 <h1 class="logo">Mwangilwa Chishiba</h1>
+                 <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="contact">Contact</a></li>
+                 </ul>
             -->
             <div class="nav__logo">
-                <a href="#home">[Your Name]</a>
+                <a href="#home">Mwangilwa Chishiba</a>
             </div>
             <ul class="nav__menu">
                 <li><a href="#home">Home</a></li>
@@ -47,18 +49,17 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <!-- TODO: Create hero section
-                 Requirements:
-                 - Your name (h1)
-                 - Professional tagline
-                 - Call-to-action button
-                 - Consider using Flexbox for layout
+            
+                 <h1>Mwangilwa Chishiba</h1>
+                 <p>Software Engineering Student | Aspiring Full-Stake Developer</p>
+                 <a href="#projects" class="btn">View My Work</a>
+                 
             -->
             <div class="hero__content">
-                <h1>Your Name</h1>
+                <h1>Mwangilwa Chishiba</h1>
                 <p class="hero__tagline">
-                    <!-- TODO: Add your professional tagline -->
-                    Web Developer | Designer | Problem Solver
+    
+                    Software Engineering Student | Web Developer | Designer | Problem Solver
                 </p>
                 <a href="#contact" class="btn btn--primary">Get In Touch</a>
             </div>
@@ -66,42 +67,77 @@
 
         <!-- About Section -->
         <section id="about" class="about">
-            <!-- TODO: Create about section
-                 Requirements:
-                 - Section heading (h2)
-                 - Profile image with alt text
-                 - Professional bio (150+ words)
-                 - Skills list
-                 - Use CSS Grid or Flexbox for layout
+            
+                 <h2 class="section_title">About Me</h2>
+                  <div class="about_container">
+                 <div class="about_image">
+                    <img src="images/profile.jpg" alt="Portrait of Mwangilwa Chishiba"> 
+                 </div>
+                 
+                 <div class="about__content">
+                    <p class="about_bio">
+                        I am a fourth-year Software Engineering student at the university of Zambia with a strong 
+                        passion for building efficient, user-friendly and scalable software solutions.
+                        My academic journey has equipped me with solid foundations in programming, system analysis, database design and web development.
+                        I enjoy solving real-world problems through clean and maintainable code.
+                        
+                        I am certified in Cisco networking, PC hardware & software and Linux essentials, which has strengthened my understanding of computer systems, networking infrastructure and server
+                        environments. I am particulary interested in full-stake web development and continuously
+                        work on improving my frontend and backend development skills.
+
+                        I am eager to gain practical industry experience where i can contribute, learn
+                        from professionals, and grow as a Software Engineer while delivering impactful
+                        digital solutions.
+                    </p>
+                    <h3>Technical Skills</h3>
+                    <ul class="about_skills">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Git & GitHub</li>
+                        <li>Java Programming</li>
+                        <li>Database Design (SQL) </li>
+                        <li>Cisco Networking</li>
+                        <li>Linux Systems</li>
+                    </ul>
+                 </div>
+                  </div>
+        </section>
+                 
             -->
             <div class="container">
                 <h2>About Me</h2>
                 <div class="about__content">
                     <div class="about__image">
-                        <!-- TODO: Add your profile image -->
-                        <img src="images/profile-placeholder.jpg" alt="Profile photo of [Your Name]">
+                        
+                        <img src="images/profile.jpg" alt="Profile photo of Mwangilwa Chishiba">
                     </div>
                     <div class="about__text">
                         <p>
-                            <!-- TODO: Write your professional bio (150+ words)
-                                 Include:
-                                 - Your background
-                                 - Your interests in web development
-                                 - Your goals
-                                 - What makes you unique
+                            I am a fourth-year Software Engineering student at the university of Zambia with a strong 
+                        passion for building efficient, user-friendly and scalable software solutions.
+                        My academic journey has equipped me with solid foundations in programming, system analysis, database design and web development.
+                        I enjoy solving real-world problems through clean and maintainable code.
+                        
+                        My carrer goal is to become a Professional software engineer who contributes to 
+                        innovative technology solutions that solve real-world problems. Iam motivated by continous learning, teamwork and technical excellence.
+
+                        What makes me unique is my combination of software development knowledge and networking fundamentals, supported by Cisco and Linux certification training.
+                        I am eager to gain industry experience and grow as a professional developer.
+                    
                             -->
-                            [Your professional bio goes here. Write at least 150 words about yourself,
-                            your background, your passion for web development, and your goals.
-                            This is your opportunity to introduce yourself to potential employers or clients.]
+                            
                         </p>
                         <h3>Skills</h3>
                         <ul class="skills-list">
-                            <!-- TODO: Add your skills -->
+                            <li>Java Programming</li>
                             <li>HTML5</li>
                             <li>CSS3</li>
                             <li>JavaScript</li>
                             <li>Responsive Design</li>
-                            <!-- Add more skills -->
+                            <li>Database Design</li>
+                            <li>Linux Networking</li>
+                            <li>Git & GitHub</li>
+                        
                         </ul>
                     </div>
                 </div>
@@ -110,12 +146,47 @@
 
         <!-- Projects Section -->
         <section id="projects" class="projects">
-            <!-- TODO: Create projects section
-                 Requirements:
-                 - Section heading (h2)
-                 - Minimum 3 project cards
-                 - Each card: image, title, description, link(s)
-                 - Use CSS Grid for card layout
+            
+                 <h2 class="section_title">My Project</h2>
+                 <div class="projects__grid">
+                    <div class="project_card">
+                        <img src="images/project1.png" alt="project1.Screenshot">
+                        <div class="project_content">
+                            <h3>Portfolio Website</h3>
+                            <p>
+                                A personal portfolio website buit using HTML, CSS, and JavaScript
+                                to showcase my skills, projects and academic information.
+                            </p>
+                            <a href="#" class="btn">View Project</a>
+                        </div>
+                    </div>
+
+                 <div class="project_card">
+                    <img src="images/project2.png" alt="project2 Screenshot">
+                    <div class="project_content">
+                        <h3>Student Information System</h3>
+                        <p>
+                            A system protope for managing student records, course data and academic information.
+                        </p>
+                        <a href="#" class="btn">View project</a>
+                    </div>
+                 </div>
+
+                 <div class="project_card">
+                    <img src="images/project3.jpg" alt="project3 Screenshot">
+                    <div class="project_content">
+                        <h3>Gadget Store POS</h3>
+                        <P>
+                            Gadget Store Point Of sale system is a system that is responsible for managing sales, processing payments, generate sales reports, add new product.
+                        </P>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                 </div>
+                 
+                 </div>
+        </section>
+    
+    
             -->
             <div class="container">
                 <h2>My Projects</h2>
@@ -123,12 +194,12 @@
                     <!-- Project Card 1 -->
                     <article class="project-card">
                         <!-- TODO: Replace with your project -->
-                        <img src="images/project1-placeholder.jpg" alt="Screenshot of Project 1">
+                        <img src="images/project1.png" alt="Screenshot of Project 1">
                         <div class="project-card__content">
-                            <h3>Project Title 1</h3>
+                            <h3>Portfolio Website</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A personal portfolio website buit using HTML, CSS, and JavaScript
+                                to showcase my skills, projects and academic information.
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -140,12 +211,12 @@
                     <!-- Project Card 2 -->
                     <article class="project-card">
                         <!-- TODO: Replace with your project -->
-                        <img src="images/project2-placeholder.jpg" alt="Screenshot of Project 2">
+                        <img src="images/project2.png" alt="Screenshot of Project 2">
                         <div class="project-card__content">
-                            <h3>Project Title 2</h3>
+                            <h3>Student Information System</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                              A system protope for managing student records, course data and academic information. using
+                              java for backend, HTML for frontend.  
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -156,13 +227,12 @@
 
                     <!-- Project Card 3 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project3-placeholder.jpg" alt="Screenshot of Project 3">
+                
+                        <img src="images/project3.png" alt="Screenshot of Project 3">
                         <div class="project-card__content">
-                            <h3>Project Title 3</h3>
+                            <h3>Gadget Store POS</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                               Gadget Store Point Of sale system is a system that is responsible for managing sales, processing payments, generate sales reports, add new product. 
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -171,23 +241,49 @@
                         </div>
                     </article>
 
-                    <!-- TODO: Add more project cards if desired -->
+
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="contact">
-            <!-- TODO: Create contact section
-                 Requirements:
-                 - Section heading (h2)
-                 - Contact form with:
-                   - Name field (required)
-                   - Email field (required, type="email")
-                   - Message textarea (required)
-                   - Submit button
-                 - All inputs must have associated labels
-                 - Use HTML5 validation attributes
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                
+                <div class="form-group">
+                 <label for="name">Full Name</label>
+                 <input
+                 type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address></label>
+                   <input
+                   type="email"
+                   id="email"
+                   name="email"
+                   placeholder="Enter your email address"
+                 required
+            >
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message here...."
+                    ></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+                
             -->
             <div class="container">
                 <h2>Contact Me</h2>
@@ -241,16 +337,21 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <!-- TODO: Create footer
-             Requirements:
-             - Copyright notice
-             - Social media links (optional)
-             - Back to top link (optional)
+        
+             <div class="footer-content">
+                <p>&copy; 2026 MWANGILWA CHISHIBA. All Rights Reserved</p>
+             </div>
+             <div class="back-to-top">
+                <a href="#home">Back to Top ↑</a>
+             </div>
+    </footer>
+             
+            
         -->
         <div class="container">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <p>&copy; 2026 MWANGILWA CHISHIBA. All rights reserved.</p>
             <nav class="footer__social">
-                <!-- TODO: Add your social media links -->
+
                 <a href="#" aria-label="GitHub">GitHub</a>
                 <a href="#" aria-label="LinkedIn">LinkedIn</a>
                 <a href="#" aria-label="Twitter">Twitter</a>
